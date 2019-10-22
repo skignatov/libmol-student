@@ -2,8 +2,9 @@
 	 Character(len=*) string
 
 	 ll=Len_Trim(string)
-!	 If (ll>132) ll=132
-	 ToUpperCase=''
+	l1=Len(ToUpperCase)
+	If (ll>l1) ll=l1
+	 ToUpperCase=repeat(ll,' ')
 	 Do i=1,ll
 	    ic=ICHAR(string(i:i))
 	    If (ic>=97 .and. ic<=122) Then
