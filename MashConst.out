@@ -1,0 +1,66 @@
+
+Number of divisons =                      1075
+Mashine Null - the smallest value (obtained by division 1 by 2 ) distinguishable from 0  :    4.9406564584124654-324
+
+Number of divisons =                        53
+Mashine Eps - the smallest number A (obtained by divison 1 by 2) which gives (1+A) /= 1  :    2.2204460492503131E-16
+
+Number of divisons =                        54
+Mashine Eps - the smallest number A (obtained by divison 1 by 2) which gives (1-A) /= 1  :    1.1102230246251565E-16
+
+Number of divisons =                      1024
+Max number - the largest value A (obtained by multiplication 1 by 2 ) distinguishable from A*2  :    8.9884656743115795+307
+
+
+
+
+ *** Results of Machar suborutine, from Numerical Recipes in F77 ***
+
+
+ibeta - the floating-point radix                                        =                         2
+
+
+it -  the number of base-ibeta digits in the floating-point mantissa    =                        53
+
+
+iexp - the number of bits in the exponent (including its sign or bias). =                        11
+
+
+negep - the exponent of the smallest power of ibeta that, subtracted
+from 1.0, gives something different from 1.0.                           =                       -53
+
+
+machep - exponent of the smallest (most negative) power of ibeta that, 
+added to 1.0, gives something different from 1.0                        =                       -52
+
+
+minexp - the smallest (most negative) power of ibeta consistent with
+there being no leading zeros in the mantissa                            =                     -1022
+
+
+maxexp - the smallest (positive) power of ibeta that causes overflow    =                      1024
+
+
+eps - Smallest positive number that, added to 1.0, is not equal to 1.0  =    2.2204460492503131E-16
+
+
+epsneg - Smallest positive number that, subtracted from 1.0, is not 
+equal to 1.0                                                            =    1.1102230246251565E-16
+
+
+xmin - Smallest representable positive number  (ibeta**minexp)          =    2.2250738585072014-308
+
+
+xmax - Largest representable positive number (1-epsneg)*(ibeta**maxexp) =    1.7976931348623157+308
+
+
+irnd - A code in the range 0:5, giving information on what kind of
+rounding is done in addition, and on how underflow is handled.          =                         5
+   irnd = 0-3 - truncating imstead of rounding (not desirable)
+   irnd = 4   - rounding (IEEE not compliant)
+   irnd = 5   - IEEE compliant rounding 
+   irnd = 3-5 also imply the IEEE compliant underflow processing
+
+
+ngrd - the number of "guard digits" used when truncating the product of
+two mantissas to fit the representation                                 =                         0

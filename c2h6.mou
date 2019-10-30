@@ -1,0 +1,272 @@
+             *******************************************************
+             *                   MOLTRAN v.2.5                     *
+             *               (build number  2277)                  *
+             *        A program for molecular visualization,       *
+             *                normal modes animation,              *
+             *      and thermochemical properties evaluation.      *
+             *                                                     *
+             *      Originally written by Stanislav Ignatov        *
+             *          Theoretical Chemistry Group                *
+             * N.I.Lobachevsky State University of Nizhny Novgorod *
+             *                 ignatov@ichem.unn.ru                *
+             *             http://ichem.unn.ru/Moltran             *
+             *         Nizhny Novgorod, Russia, 1999-2007          *
+             *******************************************************
+
+ Input file              :c2h6.inp
+ Output file             :c2h6.mou
+ TD specifications file  :none
+ Current directory       :D:\Projects\LibMol-student\
+ Moltran home directory  :C:\Moltran\
+ Configuration file      :C:\Moltran\MolTran.cfg
+ Fragment database       :C:\Moltran\Moltran.fdb
+ Input file format       : NXYZ  input at label    :GEO       
+ Label:GEO        Occurence:   1
+C1       6     -1.08570436     4.67939654    -0.90755987
+C2       6      1.08570436     4.52060286     0.90755987
+H3       1      0.63633126     5.64073235     2.59998537
+H4       1      2.79128802     5.27567128    -0.00992484
+H5       1      1.38475919     2.53170957     1.43267886
+H6       1     -2.57191727     5.87532863    -0.08182514
+H7       1     -1.82351013     2.76629450    -1.24914677
+H8       1     -0.41696807     5.51029023    -2.69174480
+ 
+
+
+        ************ READING FROM INPUT FILE IS FINISHED ************
+
+ Coordinate sets found:    1    Energies and gradients at each cycles:
+
+ Step          Energy                     GMax                Grms
+ ---------------------------------------------------------------------
+    0             0.0000000000            0.000000            0.000000
+    1             0.0000000000            0.000000            0.000000
+
+ Lowest Energy:  Step    0  Energy =          0.00000000
+ Lowest GMax  :  Step    0  GMax   =          0.000000
+ Lowest GRms  :  Step    0  GRms   =          0.000000
+
+
+ Final coordinates (A) and atomic masses (AMU), for cycle:    1
+ ------------------------------------------------------------------------------
+ C1            6          -0.574530    2.476230   -0.480260           12.000000
+ C2            6           0.574530    2.392200    0.480260           12.000000
+ H3            1           0.336732    2.984947    1.375853            1.007825
+ H4            1           1.477086    2.791765   -0.005252            1.007825
+ H5            1           0.732783    1.339723    0.758141            1.007825
+ H6            1          -1.361000    3.109090   -0.043300            1.007825
+ H7            1          -0.964960    1.463860   -0.661020            1.007825
+ H8            1          -0.220650    2.915920   -1.424410            1.007825
+ ------------------------------------------------------------------------------
+ Mass center, mol.mass:   -0.000000    2.434216    0.000000           30.046950
+
+
+ Distance matrix (A):
+
+             1   C1      2   C2      3   H3      4   H4      5   H5   
+ --------------------------------------------------------------------
+  1  C1      0.000000  
+  2  C2      1.500000    0.000000  
+  3  H3      2.129401    1.099993    0.000000  
+  4  H4      2.129395    1.099992    1.801438    0.000000  
+  5  H5      2.129402    1.099986    1.801440    1.801439    0.000000  
+  6  H6      1.099991    2.129395    2.216236    2.856024    2.856028  
+  7  H7      1.100001    2.129405    2.856039    2.856038    2.216249  
+  8  H8      1.099990    2.129404    2.856031    2.216243    2.856039  
+
+             6   H6      7   H7      8   H8   
+ --------------------------------------------------------------------
+  6  H6      0.000000  
+  7  H7      1.801446    0.000000  
+  8  H8      1.801438    1.801455    0.000000  
+
+
+ Principal moments of inertia and rotational constants:
+ ---------------------------------------------------------------
+ Ia,Ib,Ic, a.u.   :      86.404939      86.404800      23.358969
+ Ia,Ib,Ic, amu*A^2:      24.195847      24.195808       6.541178
+ A, B, C,  a.u.   :       0.011573       0.011573       0.042810
+ A, B, C,  GHz    :      20.887001      20.887034      77.261114
+ Principal axes   :           1              2              3
+                   X     -0.594870       0.243540       0.766041
+                   Y      0.315654       0.947219      -0.056019
+                   Z      0.739251      -0.208480       0.640346
+
+ Molecular coordinates in principal axes (A) 
+ ---------------------------------------------------------------
+ C1            6         -0.000001       0.000001      -0.750000
+ C2            6         -0.000001      -0.000001       0.750000
+ H3            1          0.990630       0.316833       1.108122
+ H4            1         -0.769695       0.699502       1.108115
+ H5            1         -0.220935      -1.016319       1.108127
+ H6            1          0.990635       0.316823      -1.108114
+ H7            1         -0.220932      -1.016336      -1.108122
+ H8            1         -0.769687       0.699504      -1.108127
+ ---------------------------------------------------------------
+
+ Rotational Symmetry       : Prolate Symmetric Top
+ Symmetry Index            : 23101100
+ Symmetry Group            : D3h  
+ Rotational Symmetry Number:  6
+
+
+ ****** PARAMETERS IN EFFECT *******
+
+ Temperature, K, set to  :        298.15
+ Pressure, Pa,   set to  :     101325.00
+ Rotation number set to  :             6
+ Internal rotations found:             0
+ Coordinate sets found   :             2
+ Frequencies found       :             0
+ Frequencies scaled by   :        1.0000
+ Number of atoms         :             8
+ Molecular mass          :       30.0470
+ Symmetry group          : D3h 
+ Stoichiometry           : C2H6                
+
+ ***********************************
+
+
+
+          ************ INTERACTIVE WORK IS FINISHED ************
+
+ Last view parameters:
+ Rotation matrix:   1.00000   0.00000   0.00000
+                :   0.00000   1.00000   0.00000
+                :   0.00000   0.00000   1.00000
+ View Angles    :       0.0       0.0       0.0
+ ShiftX,Y, Zoom :   0.00000   0.00000   1.00000
+ View command   :/v0.0:0.0:0.0:0.00:0.00:1.00
+
+
+Last view coordinates and bonds in a molecular (moving) frame, (A):
+-------------------------------------------------------------------------------
+  C1      6    -0.574530    2.476230   -0.480260   2   6   7   8   0   0   0   0   0   0   0   0   0   0   0   0
+  C2      6     0.574530    2.392200    0.480260   1   3   4   5   0   0   0   0   0   0   0   0   0   0   0   0
+  H3      1     0.336732    2.984947    1.375853   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H4      1     1.477086    2.791765   -0.005252   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H5      1     0.732783    1.339723    0.758141   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H6      1    -1.361000    3.109090   -0.043300   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H7      1    -0.964960    1.463860   -0.661020   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H8      1    -0.220650    2.915920   -1.424410   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+-------------------------------------------------------------------------------
+
+Last view coordinates and bonds in a laboratory (fixed) frame, (A):
+-------------------------------------------------------------------------------
+  C1      6    -0.574530    2.476230   -0.480260   2   6   7   8   0   0   0   0   0   0   0   0   0   0   0   0
+  C2      6     0.574530    2.392200    0.480260   1   3   4   5   0   0   0   0   0   0   0   0   0   0   0   0
+  H3      1     0.336732    2.984947    1.375853   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H4      1     1.477086    2.791765   -0.005252   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H5      1     0.732783    1.339723    0.758141   2   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H6      1    -1.361000    3.109090   -0.043300   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H7      1    -0.964960    1.463860   -0.661020   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+  H8      1    -0.220650    2.915920   -1.424410   1   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+-------------------------------------------------------------------------------
+
+
+
+ ******************** THERMOCHEMICAL PROPERTIES EVALUATION ********************
+
+
+ Molecular geometry corresponds to the last coordinate set - Step No.    1
+
+ Temperature   :         298.15 K 
+ Pressure      :      101325.00 Pa
+ Rot. number   :              6
+ Molecular mass:          30.05 amu
+
+
+ *** Electronic contribution ***
+
+ WARNING! Multiplicity of molecule was not set properly! Using default value (1).
+
+ Spin multiplicity of molecule = 1
+
+ Qelec =     1.00000E+00   ln(Qelec)=     0.00000   lg(Qelec)=     0.00000
+
+ CVelec=      0.000 J/K/mol     0.000 cal/K/mol      0.00000000 Hartree/K
+ CPelec=      0.000 J/K/mol     0.000 cal/K/mol      0.00000000 Hartree/K
+
+ Uelec =      0.000  kJ/mol     0.000  kcal/mol      0.00000000 Hartree
+ Helec =      0.000  kJ/mol     0.000  kcal/mol      0.00000000 Hartree
+ Selec =      0.000 J/K/mol     0.000 cal/K/mol      0.00000000 Hartree/K
+ Gelec =      0.000  kJ/mol     0.000  kcal/mol      0.00000000 Hartree
+
+
+ *** Translational contribution ***
+
+ Qtran =     6.47375E+06   ln(Qtran)=    15.68327   lg(Qtran)=     6.81116
+
+ CVtran=     12.472 J/K/mol     2.981 cal/K/mol      0.00000475 Hartree/K
+ CPtran=     20.786 J/K/mol     4.968 cal/K/mol      0.00000792 Hartree/K
+
+ Utran =      3.718  kJ/mol     0.889  kcal/mol      0.00141631 Hartree  
+ Htran =      6.197  kJ/mol     1.481  kcal/mol      0.00236052 Hartree  
+ Stran =    151.184 J/K/mol    36.134 cal/K/mol      0.00005758 Hartree/K
+ Gtran =    -38.878  kJ/mol    -9.292  kcal/mol     -0.01480827 Hartree  
+
+
+ Momentum partition functions and Helmholz free energy to be used in liquid state calculations:
+ Qmom  =     2.64608E+08   ln(Qtran)=    19.39376   lg(Qtran)=     8.42260
+ Fmom  =    -48.076  kJ/mol   -11.491  kcal/mol     -0.01831175 Hartree  
+
+ *** Rotational contribution ***
+
+ Principal moments of inertia, a.u.
+          86.4049387
+          86.4047997
+          23.3589694
+
+ Non-linear molecule
+
+ Qrot =     7.87880E+02   ln(Qrot)=     6.66935   lg(Qrot)=     2.89646
+
+ CVrot=     12.472 J/K/mol     2.981 cal/K/mol      0.00000475 Hartree/K
+ CProt=     12.472 J/K/mol     2.981 cal/K/mol      0.00000475 Hartree/K
+
+ Urot =      3.718  kJ/mol     0.889  kcal/mol      0.00141631 Hartree  
+ Hrot =      3.718  kJ/mol     0.889  kcal/mol      0.00141631 Hartree  
+ Srot =     67.924 J/K/mol    16.234 cal/K/mol      0.00002587 Hartree/K
+ Grot =    -16.533  kJ/mol    -3.951  kcal/mol     -0.00629725 Hartree  
+
+ *** Vibrational contribution ***
+
+Scaling factor for frequencies:   1.0000
+
+No. Frequency Intensity  Scaled  Reduced Used  Theta     Svib      ZPE   (H-H0)     Hvib     Gvib     Cvib    Qvib  
+      cm-1      km/mol    Freq     Mass  inTD?   K    J/K/mol   kJ/mol   kJ/mol   kJ/mol   kJ/mol  J/K/mol          
+----------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------
+ Total for    0 vibrations                              0.000    0.000    0.000    0.000    0.000    0.000 1.00000E+00
+
+
+ *** Total for ELEC+TRANS+ROT+VIBR contributions ***
+
+ Qtot =     5.10054E+09   ln(Qtot)=    22.35261   lg(Qtot)=     9.70762
+
+ CVtot=     24.943 J/K/mol     5.962 cal/K/mol      0.00000950 Hartree/K
+ CPtot=     33.258 J/K/mol     7.949 cal/K/mol      0.00001267 Hartree/K
+ ZPEtot      0.000  kJ/mol     0.000  kcal/mol      0.00000000 Hartree  
+ Utot =      7.437  kJ/mol     1.777  kcal/mol      0.00283263 Hartree  
+ Htot =      9.916  kJ/mol     2.370  kcal/mol      0.00377683 Hartree  
+ Stot =    219.108 J/K/mol    52.368 cal/K/mol      0.00008346 Hartree/K
+ Gtot =    -55.411  kJ/mol   -13.244  kcal/mol     -0.02110553 Hartree  
+
+
+ *** Total energy corrected by TD functions ****
+ Minimum electronic-nuclear energy was taken from the input file at step:   0
+ Minimum Etot:       0.00000000  (Please check the program decision manually!)
+ Base Energy :       0.00000000  (Etot used as a base for TD calculations, it is recommended to check it!)
+
+ Etot        =       0.00000000
+ Etot+ZPEtot =       0.00000000           (ZPEtot =       0.00000000)
+ Etot+Utot   =       0.00283263           (Utot   =       0.00283263)
+ Etot+Htot   =       0.00377683           (Htot   =       0.00377683)
+ Etot+Gtot   =      -0.02110553           (Gtot   =      -0.02110553)
+
+
+
+ ***** W A R N I N G !
+ ***** Vibrational frequencies have not been found in the input file.
+ ***** TD functions have no vibrational contributions!
+ ***** TD analysis may be invalid!
