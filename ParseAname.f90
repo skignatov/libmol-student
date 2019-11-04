@@ -1,21 +1,31 @@
 !*****************************************************
-Subroutine ParseAname(Aname,NA)
+Subroutine ParseAname(Aname,NA,N)
 
 Use Elements, Only: ElName
 
 Implicit Real(8) (A-H,O-Z)
 
 Character(*) Aname
-Character(1) symb,symb1
-Character(2) EN
+Character symb*1,symb1*1,EN*2,buf*10
 
 ll=Len(Aname)
+kbuf=0
+buf=repeat(' ',10)
 Do i=1,ll
     symb=Aname(i:i)
     ic=ICHAR(symb)      ! переводим символ в ASCII-код
-    If (ic>=48.and.ic<=57) Aname(i:i)=' '   ! Если символ-цифра (ASCII-коды от 48 до 57, то заменяем ее на пробел)
+    If (ic>=48.and.ic<=57) Then
+        Aname(i:i)=' '   ! Если символ-цифра (ASCII-коды от 48 до 57, то заменяем ее на пробел)
+        kbuf=kbuf+1
+        buf(kbuf:kbuf)=symb
+    Endif
     If (ic>=97.and.ic<=122) Aname(i:i)=CHAR(ic-32)             ! Заменяем строчные буквы на заглавные
 Enddo
+
+If (kbuf>0) Then
+    buf=AdjustR(buf)
+    Read(buf,'(i10)')N
+Endif
 
 Do i=1,ll
     EN=ElName(i)
