@@ -1,5 +1,5 @@
 !*****************************************************
-Subroutine ParseAname(Aname,NA,N)
+Subroutine ParseAname(Aname,NA,n)
 
 Use Elements, Only: ElName
 
@@ -9,6 +9,7 @@ Character(*) Aname
 Character symb*1,symb1*1,EN*2,buf*10
 
 ll=Len(Aname)
+n=0
 kbuf=0
 buf=repeat(' ',10)
 Do i=1,ll
@@ -24,7 +25,7 @@ Enddo
 
 If (kbuf>0) Then
     buf=AdjustR(buf)
-    Read(buf,'(i10)')N
+    Read(buf,'(i10)')n
 Endif
 
 Do i=1,ll
