@@ -28,10 +28,10 @@ If (kbuf>0) Then
     Read(buf,'(i10)')n
 Endif
 
-Do i=1,ll
+Do i=1,120
     EN=ElName(i)
     Call UCase(EN)
-    If (INDEX(Aname,EN)>0) Then
+    If (INDEX(EN,Trim(Aname))>0) Then
         NA=i
         Return
     Endif
