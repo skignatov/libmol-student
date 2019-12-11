@@ -1,4 +1,4 @@
-    Character(len=255) Function UpperCase(string)
+Character(len=255) Function UpperCase(string)
 	Character(len=*) string
 
     ll=Len_Trim(string)
@@ -14,4 +14,18 @@
 		Endif
     Enddo
 
-    End
+End
+!************************************************************
+Subroutine UCase(Str)
+
+Character(*) Str
+Character(1) sym
+
+ls=Len_Trim(Str)
+Do i=1,ls
+    ic=ICHAR(Str(i:i))
+    If (ic>=97.and.ic<=122) Str(i:i)=CHAR(ic-32)
+Enddo
+
+End
+
