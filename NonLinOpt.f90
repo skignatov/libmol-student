@@ -2,7 +2,7 @@ Module NonLinOpt
 
 Implicit real(8) (A-H,O-Z)
     
-Integer(4) nfcalls/0/,ngcalls/0/,iFunc,iu/6/,iPrint/0/,MaxIter/1000/
+Integer(4) nfcalls/0/,ngcalls/0/,iFunc,iu/6/,iPrint/1/,MaxIter/1000/
 Real(8) tolx/1.2d-7/,tolg/1.d-7/
     
 CONTAINS
@@ -14,7 +14,7 @@ Implicit Real(8) (A-H,O-Z)
 Logical check
 Real(8) dg(n),g(n),hdg(n),hess(n,n),pnew(n),xi(n)
 Real(8) P(n)
-Real(8), parameter ::STPMX=100.d0, EPS=3.d-10
+Real(8), parameter ::STPMX=0.1d0, EPS=3.d-10
 
 !USES df unc, f unc, lnsrch 
 !Given a starting point p(l:n) that is a vector of length n, the Broyden-Fletcher-Goldfarb- 
@@ -65,7 +65,11 @@ do its=1,MaxIter ! Main loop over the iterations.
 !    call dfunc(p,g)     !and get the new gradient.
     Call CompFG(2,n,p,fp,g)
 
-    If (iprint>0) Write(iu,'('' Cyc:'',i5,2x,''X:''<n>f10.5,2x,'' F:'',g15.8,2x,''G:'',<n>g10.3)')its,p(1:n),fp,g(1:n)
+    If (iprint>0) Then
+        Write(iu,'('' Cyc:'',i5,2x,'' F:'',g15.8,2x)')its,fp
+        Write(iu,'('' X:''<n>f10.5,2x,/'' G:'',<n>g10.3)')p(1:n),g(1:n)
+        Call PrintCoord(n,p)
+    Endif
 
     if(test.lt.TOLX) Then
         If (iPrint>0) Write(iu,'('' Test on X satisfied'')')

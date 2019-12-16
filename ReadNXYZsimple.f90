@@ -20,7 +20,7 @@ Real(8) C(3,MaxAt)
                 If (Len_Trim(Str)==0) Exit
                 Numat=Numat+1
                 Call SubString(Str,MaxSubStr,nSubStr,SubStr)
-                Call ParseAname(SubStr(1),NA(Numat))
+                Call ParseAname(SubStr(1),NA(Numat),nn)
                 Read(SubStr(2),'(f255.10)')C(1,Numat)
                 Read(SubStr(3),'(f255.10)')C(2,Numat)
                 Read(SubStr(4),'(f255.10)')C(3,Numat)
